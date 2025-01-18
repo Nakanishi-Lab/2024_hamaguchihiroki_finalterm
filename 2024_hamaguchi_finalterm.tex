@@ -68,7 +68,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 \begin{figure}[H]
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.13]{mpa.JPG}
+    \includegraphics[scale=0.13]{image/mpa.JPG}
     \vspace{-4mm}
     \caption{MPAの外径}
     \label{fig:MPA}
@@ -76,7 +76,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
   \hspace{0.04\columnwidth}
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.195]{mosiki.JPG}
+    \includegraphics[scale=0.195]{image/mosiki.JPG}
     \vspace{-6mm}
     \caption{蟹模倣ロボット\cite{crabrobot2}}
     \label{fig:crabrobot}
@@ -86,7 +86,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 \begin{figure}[H]
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.05]{mpa_oring_1.jpg}
+    \includegraphics[scale=0.05]{image/mpa_oring_1.jpg}
     \vspace{-2mm}
     \caption{細径MPA締結方法}
     \label{fig:OringMPA}
@@ -94,7 +94,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
   \hspace{0.04\columnwidth}
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.047]{MPA_irast.jpg}
+    \includegraphics[scale=0.047]{image/MPA_irast.jpg}
     \vspace{-2mm}
     \caption{細径MPA端部部品}
     \label{fig:MPAparts}
@@ -111,7 +111,73 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 最後に，細径MPAを羽状配置するために端部の部品の構造を改良した．羽状筋は収縮した際に筋肉の角度が変化するが，先行研究(図\ref{fig:crabrobot})では
 根元の角度が固定されており，腱の引き込みの妨げになっていた．そこで本研究では図\ref{fig:MPAparts}の細径MPAの端部の部品を作成した．
 図\ref{fig:MPAparts}の赤い斜線部の穴を回転の軸にして細径MPAの角度を自由に変化することができ，これにより細径MPA動作時に端部の部品に干渉しないことが確認できた．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-2mm}
+\section{実機の設計・作成方法}
+\vspace*{-1mm}
+\subsection{外骨格の設計について}
+作成した実機を図\ref{fig:jikki}に示す．
+今回の研究では甲殻類のうち蟹のズワイガニの歩脚モデルに機体を作成した．
+機体作成時には先行研究\cite{crabrobot2}のズワイガニの歩脚の各部寸法と，本研究で新たに解剖した際に得られた可動域をもとにしてモデリングした．
+ただし機体内部に細径MPAや腱部品などを配置する必要があるため，実測値に対して直径方向には7倍，長手方向には3.5倍のサイズとした．
+可動域を実際の蟹に近づけるために腕節部だけ長手方向に6.3倍した．
+作成にはMPA方式の3Dプリンタを使用し，関節部にはベアリングを入れている．
+長手方向の具体的な寸法としては，長節が350 mm，腕節が256 mm，前節が245 mm，指節が100 mmである．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{細径MPAを用いた羽状筋の再現について}
+蟹の外骨格内部の筋配置を図\ref{fig:kinhaichi}に示す．蟹の筋肉は外骨格から腱に向かって斜めに並んだ羽状筋となっている．
+羽状筋は収縮した際，各筋繊維の角度が大きくなるだけで，膨張しないため狭い空間で働くのに適している．また，長節から腕節に配置されている羽状筋は節の回転軸によらず縦に格納されており，腱がねじれるようになっている．
 
+上記で説明した羽状筋の筋繊維は1本ずつ長さが異なっているが，作成方法と関節の可動域の幾何学的計算を簡易化するため図\ref{fig:mus}のように細径MPAの長さがすべて等しくなるように設計した．
+
+可動域の幾何学的計算は図\ref{fig:keisan_1}のような簡易モデルをもとに三角関数などを用いて計算した．
+
+このような駆動原理の実現には，外骨格内部という限られた空間の中に，細径MPAをはじめとする多数の部品を配置する必要がある．
+まず，2章で述べたような細径MPA端部部品や改良したメッシュを用いて細径MPAを作成した．
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+  \centering
+  \begin{minipage}[b]{0.7\columnwidth}
+    \noindent
+    \centering
+    \includegraphics[width=\linewidth]{image/jikki.png}
+    \vspace{-7.5mm}
+    \caption{実機外観}
+    \vspace{1mm}
+    \label{fig:jikki}
+  \end{minipage}
+  \centering
+  \begin{minipage}[b]{0.8\columnwidth}
+    \noindent
+    \centering
+    \includegraphics[width=\linewidth]{image/crabmuscle_campare.PNG}
+    \vspace{-9.5mm}
+    \caption{蟹の筋構造\cite{crab}}
+    \vspace{3mm}
+    \label{fig:kinhaichi}
+  \end{minipage}
+  \begin{minipage}[b]{0.8\columnwidth}
+    \noindent
+    \centering
+    \includegraphics[width=\linewidth]{image/crabmuscle.jpg}
+    \vspace{-7.5mm}
+    \caption{実機内部の筋配置}
+    \vspace{3mm}
+    \label{fig:mus}
+  \end{minipage}
+  \begin{minipage}[b]{0.8\columnwidth}
+    \noindent
+    \centering
+    \includegraphics[width=\linewidth]{image/keisan_1.png}
+    \vspace{-7.5mm}
+    \caption{実機内部の筋配置}
+    \vspace{3mm}
+    \label{fig:keisan_1}
+  \end{minipage}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-2mm}
 \section{結言}
@@ -133,6 +199,12 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
   \bibitem{crabrobot2}
   中西大輔，長谷川侑大，浪花啓右，杉本靖博，
   細径空圧筋を用いた羽状筋および外骨格生物模倣ロボットの開発，ロボティクス・メカトロニクス講演会2024，2A1-L08，2024.
+
+  \bibitem{crab}
+  D.Hazerli and S.Richter,
+  Why“swimming crabs”are able to swim-The importance of the axial skeleton:A comparison between the“swimming crab”Liocarcinus depurator and two other brachyuran crabs (Cancer pagurus, Carcinus maenas) using μCT and 3D-reconstruction,
+  Arthropod Structure＆Development,
+  59,p.100972,2022
 
  \end{thebibliography}
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

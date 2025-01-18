@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.sjis) (TeX Live 2024) (preloaded format=platex 2024.4.11)  17 JAN 2025 18:49
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.sjis) (TeX Live 2024) (preloaded format=platex 2024.4.11)  18 JAN 2025 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,32 +196,41 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
-File: mpa.JPG Graphic file (type bmp)
-<mpa.JPG>
-File: mosiki.JPG Graphic file (type bmp)
-<mosiki.JPG>
+File: image/mpa.JPG Graphic file (type bmp)
+<image/mpa.JPG>
+File: image/mosiki.JPG Graphic file (type bmp)
+<image/mosiki.JPG>
 
 Overfull \hbox (3.05376pt too wide) in paragraph at lines 79--81
  [][] 
  []
 
-File: mpa_oring_1.jpg Graphic file (type bmp)
-<mpa_oring_1.jpg>
-File: MPA_irast.jpg Graphic file (type bmp)
-<MPA_irast.jpg>
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 123.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 123.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 123.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 123.
+File: image/mpa_oring_1.jpg Graphic file (type bmp)
+<image/mpa_oring_1.jpg>
+File: image/MPA_irast.jpg Graphic file (type bmp)
+<image/MPA_irast.jpg>
 [1
 
 
 
-] (./2024_hamaguchi_finalterm.aux)
+]
+File: image/jikki.png Graphic file (type bmp)
+<image/jikki.png>
+File: image/crabmuscle_campare.PNG Graphic file (type bmp)
+<image/crabmuscle_campare.PNG>
+File: image/crabmuscle.jpg Graphic file (type bmp)
+<image/crabmuscle.jpg>
+File: image/keisan_1.png Graphic file (type bmp)
+<image/keisan_1.png>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 189.
+ [2] (./2024_hamaguchi_finalterm.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01> patch level 1
@@ -229,12 +238,12 @@ L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2177 strings out of 474761
- 33186 string characters out of 5761786
- 1937341 words of memory out of 5000000
- 24541 multiletter control sequences out of 15000+600000
+ 2206 strings out of 474761
+ 33885 string characters out of 5761786
+ 1935341 words of memory out of 5000000
+ 24566 multiletter control sequences out of 15000+600000
  567279 words of font info for 73 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 57i,8n,65p,393b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,393b,396s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2024_hamaguchi_finalterm.dvi (1 page, 9668 bytes).
+Output written on 2024_hamaguchi_finalterm.dvi (2 pages, 14164 bytes).
