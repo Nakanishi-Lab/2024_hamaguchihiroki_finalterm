@@ -1,13 +1,13 @@
 # Fdb version 4
-["dvipdf"] 1737187692.85948 "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm.pdf" "2024_hamaguchi_finalterm" 1737187694.58845 0
-  "2024_hamaguchi_finalterm.dvi" 1737187692 14164 760a0771785776803ac91ff18f590029 "latex"
+["dvipdf"] 1737272434.84996 "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm.pdf" "2024_hamaguchi_finalterm" 1737272437.99669 0
+  "2024_hamaguchi_finalterm.dvi" 1737272434 18144 ffc3931d3f8a970b76346dc913c40b01 "latex"
   (generated)
   "2024_hamaguchi_finalterm.pdf"
   (rewritten before read)
-["latex"] 1737187687.66067 "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm" 1737187694.58513 0
-  "2024_hamaguchi_finalterm.aux" 1737187692 2414 dc4e7eecbf03e10758a2ee60257461b8 "latex"
-  "2024_hamaguchi_finalterm.tex" 1737187681 11832 31e3d19c0ea0858f10640b1438d713b6 ""
-  "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" 1737187681 11832 31e3d19c0ea0858f10640b1438d713b6 ""
+["latex"] 1737272428.00176 "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm" 1737272437.99318 0
+  "2024_hamaguchi_finalterm.aux" 1737272434 3484 62dc0f361ed2451ccfd46d8018c6f9d7 "latex"
+  "2024_hamaguchi_finalterm.tex" 1737272369 14418 1f6b8458f7c882a4f9ce58faa1d4e9a1 ""
+  "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" 1737272369 14418 1f6b8458f7c882a4f9ce58faa1d4e9a1 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1712804612 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/goth9.tfm" 1712807164 1196 b274fc006918dea9e5263e2117f4bddb ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/min6.tfm" 1712807164 1196 ede67ffb8cb4a6a8b9436c82b428664c ""
@@ -53,13 +53,16 @@
   "c:/texlive/2024/texmf.cnf" 1712808916 713 e69b156964470283e0530f5060668171 ""
   "chukan2018.sty" 1737158770 3835 84ba8e0bffb80723ebe75ac821c5d50a ""
   "image/MPA_irast.jpg" 1728541712 390366 e5bc085eb2154335f2b720b8ba2b9122 ""
+  "image/chousetu-wansetu.png" 1737271444 478849 6da133e9aacdbf7de72e0323a5574f6e ""
   "image/crabmuscle.jpg" 1737175693 1119696 80fc687704c00c508129d0c3f3383e18 ""
   "image/crabmuscle_campare.PNG" 1737158770 49483 29629e5dd965dc414122aaf6e41be0f5 ""
-  "image/jikki.png" 1737168698 1346280 2f2fd5f9c6584599163ba5a244a09279 ""
-  "image/keisan_1.png" 1737187536 11380 140fc9bae2c3f24a45fdadd768761ae9 ""
+  "image/jikki_2.png" 1737262721 1065052 6489e0a6c90e0223603c1d04014973ae ""
+  "image/keisan_1.png" 1737251360 26972 bc62b75f6f0f467cfc54bb7183e30a52 ""
   "image/mosiki.JPG" 1728604484 428778 e1cd569dbc1606d9666295ef86430b02 ""
   "image/mpa.JPG" 1724833675 122247 de709341907916247ad88c04f11e03ed ""
   "image/mpa_oring_1.jpg" 1728604806 461903 60b155d1cb8598557c95418aa6023355 ""
+  "image/wansetu-zensetu.png" 1737271428 637848 9a687300db74dc50e1f2ba1d9c95ac0b ""
+  "image/zensetu-sisetu.png" 1737271395 459855 a2eab260e8f71510d125fe2eb5e60950 ""
   "twocolumn.sty" 1737158770 230 e0eeb288388b8fdbdf700083bc2805d2 ""
   (generated)
   "2024_hamaguchi_finalterm.aux"

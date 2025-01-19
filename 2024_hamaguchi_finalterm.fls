@@ -92,10 +92,10 @@ INPUT ./image/MPA_irast.jpg
 INPUT ./image/MPA_irast.jpg
 INPUT extractbb -B cropbox -O image/MPA_irast.jpg
 OUTPUT 2024_hamaguchi_finalterm.dvi
-INPUT ./image/jikki.png
-INPUT ./image/jikki.png
-INPUT ./image/jikki.png
-INPUT extractbb -B cropbox -O image/jikki.png
+INPUT ./image/jikki_2.png
+INPUT ./image/jikki_2.png
+INPUT ./image/jikki_2.png
+INPUT extractbb -B cropbox -O image/jikki_2.png
 INPUT ./image/crabmuscle_campare.PNG
 INPUT ./image/crabmuscle_campare.PNG
 INPUT ./image/crabmuscle_campare.PNG
@@ -108,6 +108,18 @@ INPUT ./image/keisan_1.png
 INPUT ./image/keisan_1.png
 INPUT ./image/keisan_1.png
 INPUT extractbb -B cropbox -O image/keisan_1.png
+INPUT ./image/chousetu-wansetu.png
+INPUT ./image/chousetu-wansetu.png
+INPUT ./image/chousetu-wansetu.png
+INPUT extractbb -B cropbox -O image/chousetu-wansetu.png
+INPUT ./image/wansetu-zensetu.png
+INPUT ./image/wansetu-zensetu.png
+INPUT ./image/wansetu-zensetu.png
+INPUT extractbb -B cropbox -O image/wansetu-zensetu.png
+INPUT ./image/zensetu-sisetu.png
+INPUT ./image/zensetu-sisetu.png
+INPUT ./image/zensetu-sisetu.png
+INPUT extractbb -B cropbox -O image/zensetu-sisetu.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT 2024_hamaguchi_finalterm.aux

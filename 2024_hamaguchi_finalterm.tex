@@ -76,7 +76,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
   \hspace{0.04\columnwidth}
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.195]{image/mosiki.JPG}
+    \includegraphics[scale=0.19]{image/mosiki.JPG}
     \vspace{-6mm}
     \caption{蟹模倣ロボット\cite{crabrobot2}}
     \label{fig:crabrobot}
@@ -128,56 +128,81 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 蟹の外骨格内部の筋配置を図\ref{fig:kinhaichi}に示す．蟹の筋肉は外骨格から腱に向かって斜めに並んだ羽状筋となっている．
 羽状筋は収縮した際，各筋繊維の角度が大きくなるだけで，膨張しないため狭い空間で働くのに適している．また，長節から腕節に配置されている羽状筋は節の回転軸によらず縦に格納されており，腱がねじれるようになっている．
 
-上記で説明した羽状筋の筋繊維は1本ずつ長さが異なっているが，作成方法と関節の可動域の幾何学的計算を簡易化するため図\ref{fig:mus}のように細径MPAの長さがすべて等しくなるように設計した．
+本研究では，徐行きのような蟹の駆動機構を再現するため細径MPAを用いた羽状筋の開発を行った．開発した羽状筋を図\ref{fig:muscle}に示す．
+上記で説明した羽状筋の筋繊維は1本ずつ長さが異なっているが，作成方法と関節の可動域の幾何学的計算を簡易化するため図\ref{fig:muscle}のように細径MPAの長さがすべて等しくなるように設計した．
+図\ref{fig:muscle}の細径MPAの端部にある黒い部品は3章で紹介した細径MPAの収縮に合わせて角度が自由に変化でき，圧縮空気を各細径MPAへ一度に供給することができる部品である．
+この部品は光造形方式の3Dプリンターで作製した．
+また図\ref{fig:muscle}にある灰色の部品は蟹の腱を模したもので，TPU素材を使用してFDM方式の3Dプリンターで作製したので柔軟性が高くねじれに対応可能である．
+腱と外骨格は全てねじで固定しており，腱の張り具合は可能な仕組みになっている．
 
-可動域の幾何学的計算は図\ref{fig:keisan_1}のような簡易モデルをもとに三角関数などを用いて計算した．
-
-このような駆動原理の実現には，外骨格内部という限られた空間の中に，細径MPAをはじめとする多数の部品を配置する必要がある．
-まず，2章で述べたような細径MPA端部部品や改良したメッシュを用いて細径MPAを作成した．
-
-
-
+可動域の幾何学的計算は図\ref{fig:keisan_1}のような簡易モデルをもとに三角関数などを用いて式(\ref{theta2})，(\ref{Se})を導いた．
+収縮前の細径MPAの長さ$\ell_1$と細径MPAの付着点間の垂直距離をdを用いて収縮後の細径MPAと腱のなす角を$\theta_{2}$を計算した(式\ref{theta2})．
+収縮前の細径MPAの長さ$\ell_1$，その時の細径MPAと腱のなす角$\theta_{1}$，収縮後の細径MPAの長さ$\ell_2$，その時の細径MPAと腱のなす角$\theta_{2}$を用いて誌細径MPAの収縮による腱の水平移動距離$S_e$を計算した(式\ref{Se})．
+なお，細径MPAの収縮率は20％，$\theta_{1}$=20として計算を行った．
+\begin{eqnarray}
+	\label{theta2} \theta_2 &=& \sin^{-1}\left(\frac{d}{0.8 \ell_1}\right)\\
+  \label{Se} S_e &=& \ell_1 \cos\theta_1 - \ell_2 \cos\theta_2
+\end{eqnarray}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-2mm}
+\section{動作実験}
+長節から指節にかけてMPAを配置し動作実験を行った．関節の動きを確認しやすくするために長節-腕節間と前節-指節間は機体を寝かせた状態，腕節-前節間は機体を立てた状態で動作実験を行った．
+また，初期位置は開筋か閉筋のどちらか一方が張った状態の位置にし，空気の印加は手動で0MPa~0.6MPaまで調整して動作させた．
+
+長節-腕節間の動作結果を図\ref{fig:move1}，腕節-前節の動作実験を図\ref{fig:move2}，前節-指節の動作実験を図\ref{fig:move3}に示す．
+
+
 \begin{figure}[t]
-  \centering
-  \begin{minipage}[b]{0.7\columnwidth}
-    \noindent
+  \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\linewidth]{image/jikki.png}
-    \vspace{-7.5mm}
-    \caption{実機外観}
-    \vspace{1mm}
+    \includegraphics[scale=0.1]{image/jikki_2.png}
+    \vspace{-4mm}
+    \caption{実機の外観}
     \label{fig:jikki}
   \end{minipage}
-  \centering
-  \begin{minipage}[b]{0.8\columnwidth}
-    \noindent
+  \hspace{0.04\columnwidth}
+  \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\linewidth]{image/crabmuscle_campare.PNG}
-    \vspace{-9.5mm}
-    \caption{蟹の筋構造\cite{crab}}
-    \vspace{3mm}
+    \includegraphics[scale=0.35]{image/crabmuscle_campare.PNG}
+    \vspace{-2mm}
+    \caption{蟹模倣ロボット\cite{crab}}
     \label{fig:kinhaichi}
   \end{minipage}
-  \begin{minipage}[b]{0.8\columnwidth}
-    \noindent
+\end{figure}
+\begin{figure}[t]
+  \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[width=\linewidth]{image/crabmuscle.jpg}
-    \vspace{-7.5mm}
+    \includegraphics[scale=0.03]{image/crabmuscle.jpg}
+    \vspace{2mm}
     \caption{実機内部の筋配置}
-    \vspace{3mm}
-    \label{fig:mus}
+    \label{fig:muscle}
   \end{minipage}
-  \begin{minipage}[b]{0.8\columnwidth}
-    \noindent
+  \hspace{0.04\columnwidth}
+  \begin{minipage}[b]{0.45\columnwidth}
     \centering
-    \includegraphics[width=\linewidth]{image/keisan_1.png}
-    \vspace{-7.5mm}
-    \caption{実機内部の筋配置}
-    \vspace{3mm}
+    \includegraphics[scale=0.18]{image/keisan_1.png}
+    \vspace{-4.5mm}
+    \caption{実機の簡易モデル}
     \label{fig:keisan_1}
   \end{minipage}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-4mm}
+\begin{figure*}[t]
+  \centering
+  \subfigure[長節-腕節間の動作実験]{%
+  \label{fig:move1} \includegraphics[scale=0.4]{image/chousetu-wansetu.png}}\\%
+  \vspace{-2mm}
+  \subfigure[腕節‐前節間の動作実験]{%
+  \label{fig:move2} \includegraphics[scale=0.3]{image/wansetu-zensetu.png}}%
+  \vspace{-2mm}
+  \subfigure[前節‐指節間の動作実験]{%
+  \label{fig:move3} \includegraphics[scale=0.4]{image/zensetu-sisetu.png}}%
+  \vspace{-2mm}
+  \caption{動作実験の様子．ここで開筋は関節を開く方向に，閉筋は閉じる方向に作用する羽状筋を指す．}
+  \label{fig:move}
+  \vspace{-2mm}
+\end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-2mm}
 \section{結言}
@@ -187,7 +212,6 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{99}
-
   \bibitem{wakimoto}
   脇本修一，
   細径McKibben型人工筋の開発と用途開拓，
