@@ -1,14 +1,14 @@
 \documentclass{jarticle}
 
 \usepackage{twocolumn}
-% \usepackage[dvi ps]{graphicx}%%画像を読み込む
+%\usepackage[dvi ps]{graphicx}%%画像を読み込む
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{subfigure}
 \usepackage{amsmath}          %%genfrac http://www．biwako．shiga-u．ac．jp/sensei/kumazawa/tex/form006．html
 \usepackage{ulem}             %%http://biwako．shiga-u．ac．jp/sensei/kumazawa/tex/ulem．html     uline，uuline，uwave，sout，xoutなど
 \usepackage{multirow}
 \usepackage{here}
-% \usepackage{setspace}
+%\usepackage{setspace}
 \usepackage{chukan2018}       %%最後に読み込むこと！(最後に読み込まないと\textwidthなどの設定が反映されない)
 
 \pagestyle{empty} %ページ番号を入れるときにはコメントアウトする
@@ -147,9 +147,15 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 \vspace*{-2mm}
 \section{動作実験}
 長節から指節にかけてMPAを配置し動作実験を行った．関節の動きを確認しやすくするために長節-腕節間と前節-指節間は機体を寝かせた状態，腕節-前節間は機体を立てた状態で動作実験を行った．
-また，初期位置は開筋か閉筋のどちらか一方が張った状態の位置にし，空気の印加は手動で0MPa~0.6MPaまで調整して動作させた．
+また，初期位置は開筋か閉筋のどちらか一方が張った状態の位置にし，圧縮空気の印加は手動で行い印加圧力は0.6MPa，開筋と閉筋の手動弁を交互に開閉することで動作させた．
 
 長節-腕節間の動作結果を図\ref{fig:move1}，腕節-前節の動作実験を図\ref{fig:move2}，前節-指節の動作実験を図\ref{fig:move3}に示す．
+結果より，長節-腕節間では初期状態(図\ref{fig:move1}中左)と最終状態(図\ref{fig:move1}中右)では歩脚の角度が近い状態になった．
+腕節-前節間，前節-指節間では長節-腕節間と同じような動きがみられたが，可動域が少し狭く感じた．
+
+また，動作分析ソフトウェアのKinoviaと数値解析が可能なMATLABを用いて実機の可動域を計測した(図)．
+その結果，長節-腕節間では実際の可動域が
+
 
 
 \begin{figure}[t]
@@ -187,24 +193,30 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
   \end{minipage}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-4mm}
+%\vspace*{-4mm}
 \begin{figure*}[t]
   \centering
   \subfigure[長節-腕節間の動作実験]{%
-  \label{fig:move1} \includegraphics[scale=0.4]{image/chousetu-wansetu.png}}\\%
+  \label{fig:move1} \includegraphics[scale=0.4]{image/chousetu-wansetu_edited.png}}\\%
   \vspace{-2mm}
   \subfigure[腕節‐前節間の動作実験]{%
-  \label{fig:move2} \includegraphics[scale=0.3]{image/wansetu-zensetu.png}}%
+  \label{fig:move2} \includegraphics[scale=0.4]{image/wansetu-zensetu_edited.png}}%
   \vspace{-2mm}
   \subfigure[前節‐指節間の動作実験]{%
-  \label{fig:move3} \includegraphics[scale=0.4]{image/zensetu-sisetu.png}}%
+  \label{fig:move3} \includegraphics[scale=0.4]{image/zensetu-sisetu_edited.png}}%
   \vspace{-2mm}
   \caption{動作実験の様子．ここで開筋は関節を開く方向に，閉筋は閉じる方向に作用する羽状筋を指す．}
   \label{fig:move}
   \vspace{-2mm}
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace*{-2mm}
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  項目/部位 & 長節-腕節間 & 腕節-前節間 & 前節-指節間 \\ \hline
+  実際の蟹の可動域 & 52$\sim$130 & 0$\sim$45 & 0$\sim$89 \\ \hline
+  実機の可動域 & 45.3$\sim$133.1 & 3.25$\sim$36.0 & 9.82$\sim$39.8 \\ \hline
+\end{tabular}
+%\vspace*{-2mm}
 \section{結言}
 
 本稿では，外骨格生物模倣ロボットの開発をするにあたって課題となる細径MPA の作成方法と固定方法について改良を行った．

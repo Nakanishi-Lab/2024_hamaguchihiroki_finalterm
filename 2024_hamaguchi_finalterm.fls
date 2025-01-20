@@ -108,18 +108,18 @@ INPUT ./image/keisan_1.png
 INPUT ./image/keisan_1.png
 INPUT ./image/keisan_1.png
 INPUT extractbb -B cropbox -O image/keisan_1.png
-INPUT ./image/chousetu-wansetu.png
-INPUT ./image/chousetu-wansetu.png
-INPUT ./image/chousetu-wansetu.png
-INPUT extractbb -B cropbox -O image/chousetu-wansetu.png
-INPUT ./image/wansetu-zensetu.png
-INPUT ./image/wansetu-zensetu.png
-INPUT ./image/wansetu-zensetu.png
-INPUT extractbb -B cropbox -O image/wansetu-zensetu.png
-INPUT ./image/zensetu-sisetu.png
-INPUT ./image/zensetu-sisetu.png
-INPUT ./image/zensetu-sisetu.png
-INPUT extractbb -B cropbox -O image/zensetu-sisetu.png
+INPUT ./image/chousetu-wansetu_edited.png
+INPUT ./image/chousetu-wansetu_edited.png
+INPUT ./image/chousetu-wansetu_edited.png
+INPUT extractbb -B cropbox -O image/chousetu-wansetu_edited.png
+INPUT ./image/wansetu-zensetu_edited.png
+INPUT ./image/wansetu-zensetu_edited.png
+INPUT ./image/wansetu-zensetu_edited.png
+INPUT extractbb -B cropbox -O image/wansetu-zensetu_edited.png
+INPUT ./image/zensetu-sisetu_edited.png
+INPUT ./image/zensetu-sisetu_edited.png
+INPUT ./image/zensetu-sisetu_edited.png
+INPUT extractbb -B cropbox -O image/zensetu-sisetu_edited.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT 2024_hamaguchi_finalterm.aux
