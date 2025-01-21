@@ -124,28 +124,34 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 
 本研究では，羽状筋のような蟹の駆動機構を再現するため細径MPAを用いた羽状筋の開発を行った．開発した羽状筋を図\ref{fig:muscle}に示す．
 上記で説明した羽状筋の筋繊維は1本ずつ長さが異なっているが，作成方法と関節の可動域の幾何学的計算を簡易化するため図\ref{fig:muscle}のように細径MPAの長さがすべて等しくなるように設計した．
-図\ref{fig:muscle}の細径MPAの端部にある黒い部品は3章で紹介した細径MPAの収縮に合わせて角度が自由に変化でき，圧縮空気を各細径MPAへ一度に供給することができる部品である．この部品は光造形方式の3Dプリンターで作製した．
-また図\ref{fig:muscle}にある灰色の部品は蟹の腱を模したもので，TPU素材を使用してFDM方式の3Dプリンターで作製したので柔軟性が高くねじれに対応可能である．
-腱と外骨格は全てねじで固定しており，腱の張り具合は可能な仕組みになっている．
+図\ref{fig:muscle}の細径MPAの端部にある黒い部品は3章で紹介した細径MPAの収縮に合わせて角度が自由に変化でき，圧縮\\
 
-実際の蟹の可動域を再現するために必要な腱のストローク，細径MPAの配置が理由で可動域を再現不可能な関節の可動域を幾何学的計算から求めた(表\ref{tab:kadouiki})．
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-4mm}
 \begin{figure*}[t]
   \centering
-  \subfigure[長節-腕節間の動作実験]{\includegraphics[scale=0.24]{image/chousetu-wansetu_edited.png}}\\
+  \subfigure[長節-腕節間の動作実験]{\includegraphics[scale=0.23]{image/chousetu-wansetu_edited.png}}\\
   \label{fig:move1}
   \vspace{-2mm}
-  \subfigure[腕節‐前節間の動作実験]{\includegraphics[scale=0.24]{image/wansetu-zensetu_edited.png}}\\
+  \subfigure[腕節‐前節間の動作実験]{\includegraphics[scale=0.23]{image/wansetu-zensetu_edited.png}}
   \label{fig:move2} 
   \vspace{-2mm}
-  \subfigure[前節‐指節間の動作実験]{\includegraphics[scale=0.24]{image/zensetu-sisetu_edited.png}}\\
+  \subfigure[前節‐指節間の動作実験]{\includegraphics[scale=0.23]{image/zensetu-sisetu_edited.png}}
   \label{fig:move3} 
   \vspace{-2mm}
   \caption{動作実験の様子．ここで開筋は関節を開く方向に，閉筋は閉じる方向に作用する羽状筋を指す．}
   \label{fig:jikken}
   \vspace{-2mm}
 \end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+空気を各細径MPAへ一度に供給することができる部品である．この部品は光造形方式の3Dプリンターで作製した．
+また図\ref{fig:muscle}にある灰色の部品は蟹の腱を模したもので，TPU素材を使用してFDM方式の3Dプリンターで作製したので柔軟性が高くねじれに対応可能である．
+腱と外骨格は全てねじで固定しており，腱の張り具合は可能な仕組みになっている．
+
+実際の蟹の可動域を再現するために必要な腱のストローク，細径MPAの配置が理由で可動域を再現不可能な関節の可動域を幾何学的計算から求めた(表\ref{tab:kadouiki})．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{eqnarray}
 %	\label{theta2} \theta_2 &=& \sin^{-1}\left(\frac{d}{0.8 \ell_1}\right)\\
