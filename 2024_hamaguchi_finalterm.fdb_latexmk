@@ -1,13 +1,13 @@
 # Fdb version 4
-["dvipdf"] 1737597378.15631 "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm.pdf" "2024_hamaguchi_finalterm" 1737597380.85107 0
-  "2024_hamaguchi_finalterm.dvi" 1737597378 19400 721fe58c4e291ca04cd451742ab59c81 "latex"
+["dvipdf"] 1737619508.71624 "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm.pdf" "2024_hamaguchi_finalterm" 1737619512.04736 0
+  "2024_hamaguchi_finalterm.dvi" 1737619508 18128 20bc0d4b2dabd7866bfd6aa670be93e3 "latex"
   (generated)
   "2024_hamaguchi_finalterm.pdf"
   (rewritten before read)
-["latex"] 1737597373.47957 "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm" 1737597380.84745 0
-  "2024_hamaguchi_finalterm.aux" 1737597378 3053 811057f9ab1561397d83de43f3fd8b38 "latex"
-  "2024_hamaguchi_finalterm.tex" 1737597368 16859 716b3b5fa17b964d94759240afbc0b82 ""
-  "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" 1737597368 16859 716b3b5fa17b964d94759240afbc0b82 ""
+["latex"] 1737619504.07651 "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" "2024_hamaguchi_finalterm.dvi" "2024_hamaguchi_finalterm" 1737619512.0438 0
+  "2024_hamaguchi_finalterm.aux" 1737619508 2529 499a3af1841fa3f340368bdf2159dc5c "latex"
+  "2024_hamaguchi_finalterm.tex" 1737619498 15261 c385c6f710f7e625a44005c8d014f835 ""
+  "c:/Users/hiroki2030/Desktop/2024_final/2024_hamaguchi_finalterm.tex" 1737619498 15261 c385c6f710f7e625a44005c8d014f835 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1712804612 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm" 1712807164 1196 5981e79c37b2cfd27b3612a6783cd4b6 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm" 1712807164 1196 1be730212205a270378fba11a44765dc ""
@@ -60,8 +60,8 @@
   "image/MPA_irast.jpg" 1728541712 390366 e5bc085eb2154335f2b720b8ba2b9122 ""
   "image/chousetu-wansetu_edited.png" 1737340960 534847 ecac965ad2c8546ba305571957ae71f6 ""
   "image/crabmuscle.jpg" 1737175693 1119696 80fc687704c00c508129d0c3f3383e18 ""
+  "image/hikaku.png" 1737607265 979495 ba295bcda4d0eb129a2a407e041dc5ab ""
   "image/jikki.png" 1737168698 1346280 2f2fd5f9c6584599163ba5a244a09279 ""
-  "image/mpa_oring_1.jpg" 1728604806 461903 60b155d1cb8598557c95418aa6023355 ""
   "image/wansetu-zensetu_edited.png" 1737341000 560780 b56f755df2ac697bc8789b5cda4c6abf ""
   "image/zensetu-sisetu_edited.png" 1737341120 506856 29f4eeb2eed33ffc51749bc618e6df84 ""
   "twocolumn.sty" 1737158770 230 e0eeb288388b8fdbdf700083bc2805d2 ""
