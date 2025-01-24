@@ -25,9 +25,7 @@ Improvement of Thin Pneumatic Muscles for Development of Crab-type Robot
 }
 \author{
 \centering
-研究者　濱口 紘生\\
-\centering
-指導教員　中西 大輔
+研究者　濱口 紘生　　指導教員　中西 大輔
 }
 \eauthor{
 Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
@@ -51,25 +49,23 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 %\vspace*{-2mm}
 \section{細径MPAを用いた羽状筋の再現}
 %\vspace*{-1mm}
-羽状筋とは，筋肉全体が斜めの角度で腱に付着する筋肉形状を指す．
-この構造により，筋肉全体が羽のような配置を持ち，同じ断面積内に多くの筋繊維を収めることが可能となる．これにより，高い力を発生する特性を有する．
-本研究で作製するカニ模倣型ロボットにおいても，外骨格内部に羽状筋に類似した筋構造を組み込む設計を行う．
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\vspace*{-1mm}
-まず，先行研究\cite{crabrobot1}において確認された細径MPAの作成方法および羽状筋配置方法に関する問題の解決に取り組んだ．
-先行研究\cite{crabrobot1}では図\ref{fig:OringMPA}上のように，MPAを構成するシリコンチューブとスリーブを端部で糸で縛り接着剤で固定する方式を採用していたが，
-糸の締結に時間と練度を必要とすることや，度々空気漏れを生じるという難点があった．そこで本研究では端部部品を改良し，ゴムと端部を接着剤で，
-スリーブと端部をOリングと接着剤でそれぞれ固定する方式へと変更した(図\ref{fig:OringMPA}下)．これにより細径MPAに練度が不要となり，作成時間も大幅に短縮された．
+羽状筋とは，筋肉全体が斜めの角度で腱に付着する筋肉形状を指し，同じ断面積内に多くの筋繊維を収めることが可能であることから高い力を発生する特性を有する.
+
+本研究では，先行研究\cite{crabrobot2}で開発された細径MPAを用いた羽状筋の課題解決に取り組んだ．
+
+まず制作方法について，本研究では端部部品を改良し、ゴムと端部を接着剤で，スリーブと端部をOリングと接着剤でそれぞれ固定する方式へと変更した．(図\ref{fig:OringMPA}下)
+これにより細径MPAの作成に練度が不要となり，作製時間が大幅に短縮された．
 
 続いて細径MPAの収縮性能向上に取り組んだ．
-先行研究\cite{crabrobot1}において開発された細径MPAにおいては，折癖の影響からスリーブが多少膨らんだ状態で作成されていたため，
-圧力印加時の収縮量が減少してしまっていた．本研究ではメッシュの中に直径2mmの丸棒を差し込んで固定した状態でホットプレートで加熱することで熱可塑変化させた．
-折癖をとるとともにスリーブの初期直径を2mmにまで小さくすることに成功し，0.6MPa印加時の旧型の収縮率が16％に対し新型は20％まで向上させることができた．
+細径MPAに用いるスリーブに対して事前に熱加工を行うことで折癖をとるとともにスリーブの初期直径を2 mmにまで小さくすることに成功した．
+これにより0.6 MPa印加時の収縮率が16 ％から20 ％まで向上させることができた．
 
-最後に，細径MPAを羽状配置するために端部の部品の構造を改良した．羽状筋は収縮した際に筋肉の角度が変化するが，
-先行研究\cite{crabrobot1}では根元の角度が固定されており，腱の引き込みの妨げになっていた．そこで本研究では図\ref{fig:MPAparts}の細径MPAの端部の部品を作成した．
-図\ref{fig:MPAparts}の赤い斜線部の穴を回転の軸にして細径MPAの角度を自由に変化することができ，これにより細径MPAと腱によってできる羽状角が動作時に変化することが確認できた．
-
+最後に細径MPAを羽状配置するために端部の部品ん構造を改良した．
+羽状筋は収縮した際に筋肉の角度(羽状角)が変化するが，先行研究\cite{crabrobot1}では根元の角度が固定されており，腱の引き込みの妨げになっていた．
+そこで本研究では図\ref{fig:MPAparts}に示すように細径MPA端部部品に自由度を持たせた．
+図\ref{fig:MPAparts}中，赤斜線部の穴に回転軸が左右からはまる構造になっている．
+これにより，細径MPAが収縮して腱が引き込まれた際にも羽状角が変化することが可能となった．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[H]
 %  \begin{minipage}[b]{0.47\columnwidth}
 %    \centering
@@ -89,17 +85,17 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 %\end{figure}
 %\vspace*{-5mm}
 \begin{figure}[!t]
-  \begin{minipage}[b]{0.5\columnwidth}
+  \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.13]{image/hikaku.png}
+    \includegraphics[scale=0.1]{image/hikaku.png}
     \vspace{-2mm}
     \caption{MPA締結方法}
     \label{fig:OringMPA}
   \end{minipage}
-  \begin{minipage}[b]{0.47\columnwidth}
+  \begin{minipage}[b]{0.5\columnwidth}
     \centering
-    \includegraphics[scale=0.042]{image/MPA_irast.jpg}
-    \vspace{-1mm}
+    \includegraphics[scale=0.05]{image/MPA_irast.jpg}
+    \vspace{-2mm}
     \caption{細径MPA部品}
     \label{fig:MPAparts}
   \end{minipage}
@@ -133,7 +129,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
           \hline
           項目/部位 & 長節-腕節間 & 腕節-前節間 & 前節-指節間 \\ \hline
           実際の蟹の可動域 & 52$\sim$130 & 0$\sim$45 & 0$\sim$89 \\ \hline
-          計算上のロボットの可動域　& 49.4$\sim$130.6 & 0$\sim$34.13 & 0$\sim$55.9 \\ \hline
+          計算上のロボットの可動域　& 49.4$\sim$130.6 & 0$\sim$27 & 0$\sim$32.35 \\ \hline
           実際のロボットの動域 & 45.3$\sim$133.1 & 3.25$\sim$36.0 & 9.82$\sim$39.8 \\ \hline
       \end{tabular}
   }
@@ -141,19 +137,19 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace{-4mm}
-\begin{figure}[!t]
+\begin{figure}[t]
   \vspace{-2mm}
   \centering
   \subfigure[長節-腕節間の動作実験]{
-  \label{fig:move1} \includegraphics[scale=0.21]{image/chousetu-wansetu_edited.png}}
+  \label{fig:move1} \includegraphics[scale=0.2]{image/chousetu-wansetu_edited.png}}
   \vspace{-2mm}
   \centering
   \subfigure[腕節‐前節間の動作実験]{
-  \label{fig:move2} \includegraphics[scale=0.21]{image/wansetu-zensetu_edited.png}}
+  \label{fig:move2} \includegraphics[scale=0.2]{image/wansetu-zensetu_edited.png}}
   \vspace{-2mm}
   \centering
   \subfigure[前節‐指節間の動作実験]{
-  \label{fig:move3} \includegraphics[scale=0.21]{image/zensetu-sisetu_edited.png}}
+  \label{fig:move3} \includegraphics[scale=0.2]{image/zensetu-sisetu_edited.png}}
   \vspace{-2mm}
   \caption{動作実験の様子}
   \label{fig:jikken}
@@ -164,18 +160,18 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 %\vspace*{2mm}
 \section{実機の設計・作成方法}
 %\vspace*{-1mm}
-%\subsection{外骨格の設計について}
+\subsection{外骨格の設計について}
 
 作成した実機を図\ref{fig:jikki}に示す．
 今回の研究では甲殻類のうち蟹のズワイガニの歩脚モデルに機体を作成した．
 機体作成時には先行研究\cite{crabrobot2}のズワイガニの歩脚の各部寸法と，本研究で新たに解剖した際に得られた可動域をもとにしてモデリングした．
-ただし機体内部に細径MPAや腱部品などを配置する必要があるため，実測値に対して直径方向には7倍，長手方向には3.5倍のサイズとした．
-可動域を実際の蟹に近づけるために腕節部だけ長手方向に6.3倍した．
+ただし機体内部に細径MPAや腱部品などを配置する必要があるため，実測値に対して直径方向には7倍，長手方向には3.5 倍のサイズとした．
+しかし，上記のサイズ変更では腕節部の外骨格内部へアクチュエータの配置が困難であったため，直径方向のみを5.2倍に変更した．
 作成にはFDM方式の3Dプリンタを使用し，関節部にはベアリングを入れている．
 長手方向の具体的な寸法としては，長節が350 mm，腕節が256 mm，前節が245 mm，指節が100 mmである．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace{-1mm}
-%\subsection{細径MPAを用いた羽状筋の再現方法}
+\subsection{細径MPAを用いた羽状筋の再現方法}
 
 開発した羽状筋を図\ref{fig:muscle}に示す．
 上記で説明した実際の蟹の羽状筋の筋繊維は1本ずつ長さが異なっているが，作成方法と関節の可動域の幾何学的計算を簡易化するため図\ref{fig:muscle}のように細径MPAの長さがすべて等しくなるように設計した．
@@ -183,8 +179,11 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 また図\ref{fig:muscle}にある灰色の部品は蟹の腱を模したもので，TPU素材を使用してFDM方式の3Dプリンターで作製したので柔軟性が高い．
 腱と外骨格は全てねじで固定しており，腱の張り具合は調整可能な仕組みになっている．
 
-本研究の羽状筋配置方法では，腕節-前節間と前節-指節間において実際の蟹の可動域の再現が不可能であることが分かった．
-そこで、設計した実機で関節の可動域が最大になるように羽状配置を行った．本研究での羽状配置から実機の可動域を計算した(表\ref{tab:kadouiki})．
+表\ref{tab:kadouiki}にカニの各関節の可動域を計測した」結果を示す．
+またロボットにおいては，子の可動域が再現できるように腱の付着位置などを設計した．
+計算上の各関節の可動域を表\ref{tab:kadouiki}に示す．
+ここで腕節-前節間と前節-指節間については実際の可動域よりも設計上の可動域のほうが狭いが，これは今回の「全ての細径MPAの長さは等しい」という設計方針では可動域の再現が不可能であるためである．
+より広い可動域を実現するためには，短い筋や関節の再現が必要であるが，今後の課題とする．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{eqnarray}
 %	\label{theta2} \theta_2 &=& \sin^{-1}\left(\frac{d}{0.8 \ell_1}\right)\\
@@ -194,40 +193,50 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace*{-2mm}
 \section{動作実験}
-長節から指節にかけて羽状筋を配置し動作実験を行った．関節の動きを確認しやすくするために長節-腕節間と前節-指節間は機体を寝かせた状態，腕節-前節間は機体を立てた状態で動作実験を行った．
+関節の動きを確認しやすくするために長節-腕節間と前節-指節間は機体を寝かせた状態，腕節-前節間は機体を立てた状態で動作実験を行った．
 また，初期位置は開筋か閉筋のどちらか一方が張った状態の位置にし，圧縮空気の印加は手動で行い印加圧力は0.6MPa，開筋と閉筋の手動弁を交互に開閉することで動作させた．
-ここで開筋は関節を開く方向に，閉筋は閉じる方向に作用する羽状筋を指す．\\
+ここで開筋は関節を開く方向に，閉筋は閉じる方向に作用する羽状筋を指す．
+
 長節-腕節間の動作結果を図\ref{fig:move1}，腕節-前節の動作実験を図\ref{fig:move2}，前節-指節の動作実験を図\ref{fig:move3}に示す．
 結果より，長節-腕節間では初期状態(図\ref{fig:move1}左)と最終状態(図\ref{fig:move1}右)では歩脚の角度が近い状態になった．
-腕節-前節間，前節-指節間では長節-腕節間と同じような動きがみられたが，可動域が少し狭く感じられた．\\
+腕節-前節間，前節-指節間では長節-腕節間と同じような動きがみられたが，可動域が少し狭く感じられた．
+
 そこでトラッキングソフト(kinovia)を用いて動作時の関節可動域を計算した(表\ref{tab:kadouiki})．
-その結果，長節腕節間では実際の蟹の可動域を再現でき，腕節-前節間では少なくても設計通りの可動域が再現でき，前節-指節間では設計可動域が再現できなかった．
+その結果，長節腕節間では実際の蟹の可動域を再現できた，腕節-前節間では設計通りの可動域が再現できた，前節-指節間では設計通り可動域が再現できた．
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace*{-5mm}
-\section{考察}
-前節-指節間の関節の動きが小さい原因について考察する．
-原因として，腱付着点から節の中心まで伸びている腱の長さが長かった点が挙げられる．
-これにより，可動域を再現するための簡易モデルのとの差が生じてしまい可動域を再現するためにより多くのストロークが必要になってしまっていた．
-よって，簡易モデルを再現するために腱を押さえつけるような部品の開発が必要であると考えられる．
-
-%\begin{figure}[t]
-%    \centering
-%   \includegraphics[scale=0.18]{image/keisan_1.png}
-%    \vspace{-4.5mm}
-%    \caption{実機の簡易モデル}
-%    \label{fig:keisan_1}
-  %\end{minipage}
-%\end{figure}
-
-
-
+%\section{考察}
+計算した可動域との差が出た原因について考察する．
+原因として，腱の固定方法が挙げられる．図\ref{fig:kenkotei}，図\ref{fig:ken_moshiki}に本研究で作製した実機の腱固定方法を示す．
+本研究では腱をねじで押さえつけるように固定していました．
+しかし，この固定方法では腱をどのくらいの長さで固定すればいいかがわからなくなってしまう．
+それにより計算上の腱の長さと差が生じ，圧力を印加していない状態で張力が発生してしまい可動域にも差が生じてしまったと考えられる．
+ここは張力が発生しないような腱の固定方法を考えて書こうと思います．
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+  \begin{minipage}[b]{0.47\columnwidth}
+    \centering
+    \includegraphics[scale=0.17]{image/kenkotei.jpg}
+    \vspace{-2mm}
+    \caption{腱の固定方法}
+    \label{fig:kenkotei}
+  \end{minipage}
+  \hspace{0.04\columnwidth}
+  \begin{minipage}[b]{0.47\columnwidth}
+    \centering
+    \includegraphics[scale=0.17]{image/moshiki_edited.png}
+    \vspace{1mm}
+    \caption{腱固定方法の模式図}
+    \label{fig:ken_moshiki}
+  \end{minipage}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\vspace*{-2mm}
 \section{結言}
 本稿では，外骨格生物模倣ロボットの開発をするにあたって課題となる細径MPA の作成方法と固定方法について改良を行った．
 さらにそれらを用いてカニ模倣型ロボットの開発に成功し，長節から指節までの動作実験を行った．
-節の開閉動作を確認することができたが実際の蟹の可動域を完全に再現することはできなかった．
-今後は細径MPAを同じ長さに配置する方法，動作時に腱が関節から離れない設計を考えることにより実際の蟹の動きに近づけるような歩脚ロボットの完成を予定している．
+節の開閉動作を確認することができ，計算上の可動域に近い動作を確認することができた．
+今後は多様な長さの細径MPAを配置する方法，細径MPAに圧縮空気を印加していない状態で張力が発生しない固定方法を考えることにより実際の蟹の動きに近づけるような歩脚ロボットの完成を予定している．
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{99}
