@@ -18,10 +18,10 @@
 \linesparpage{50}
 
 \title{
-改良型細径空圧筋を用いたカニ模倣型ロボットの開発
+改良型細径空圧羽状筋を用いたカニ模倣型ロボットの開発
 }
 \etitle{
-Development of Crab-type Robot Using an Improved Thin Pneumatic Mustle
+Development of Crab-type Robot Using an Improved Thin Pneumatic Feathering Mustle
 }
 \author{
 \centering
@@ -48,7 +48,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\vspace*{-2mm}
-\section{細径MPAを用いた羽状筋の再現}
+\section{改良型細径空圧羽状筋の開発}
 %\vspace*{-1mm}
 羽状筋とは，筋肉全体が斜めの角度で腱に付着する筋肉形状を指し，同じ断面積内に多くの筋繊維を収めることが可能であることから高い力を発生する特性を有する.
 
@@ -114,7 +114,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 
 \begin{figure}[t!]
     \centering
-    \includegraphics[scale=0.05]{image/crabmuscle.jpg}
+    \includegraphics[scale=0.045]{image/crabmuscle.jpg}
     \vspace{-2mm}
     \caption{細径MPAを用いた羽状筋(長節，開筋)}
     \label{fig:muscle}
@@ -145,15 +145,15 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 \begin{figure}[t]
   \centering
   \subfigure[長節-腕節間の動作実験]{
-  \label{fig:move1} \includegraphics[scale=0.23]{image/chousetu-wansetu_edited.png}}
+  \label{fig:move1} \includegraphics[scale=0.21]{image/chousetu-wansetu_edited.png}}
   \vspace{-2mm}
   \centering
   \subfigure[腕節‐前節間の動作実験]{
-  \label{fig:move2} \includegraphics[scale=0.23]{image/wansetu-zensetu_edited.png}}
+  \label{fig:move2} \includegraphics[scale=0.21]{image/wansetu-zensetu_edited.png}}
   \vspace{-2mm}
   \centering
   \subfigure[前節‐指節間の動作実験]{
-  \label{fig:move3} \includegraphics[scale=0.23]{image/zensetu-sisetu_edited.png}}
+  \label{fig:move3} \includegraphics[scale=0.21]{image/zensetu-sisetu_edited.png}}
   \vspace{-2mm}
   \caption{動作実験の様子}
   \label{fig:jikken}
@@ -163,7 +163,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\vspace*{2mm}
-\section{実機の設計・作成方法}
+\section{カニ模倣型ロボットの設計・作成方法}
 %\vspace*{-1mm}
 %\subsection{外骨格の設計について}
 
@@ -206,24 +206,25 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
 腕節-前節間，前節-指節間では長節-腕節間と同じような動きがみられたが，可動域が少し狭く感じられた．
 
 そこでトラッキングソフト(kinovia)を用いて動作時の関節可動域を計算した(表\ref{tab:kadouiki})．
-その結果，長節-腕節間，腕節-前節間および前節-指節間では多少の誤差があるものの，概ね設計通りに再現できた．
+その結果，全ての関節において多少の誤差があるものの，概ね設計通りの可動域が実現されていることが確認できた．
 
 計算した可動域とで差が出た原因について考察する．
 原因として，腱の固定方法が挙げられる．図\ref{fig:kenkotei}，図\ref{fig:ken_moshiki}に本研究で作製した実機の腱固定方法を示す．
 本研究では腱をねじで押さえつけて固定する方法を採用した．
-しかし，この固定方法では腱をどれほどの長さで固定すればいいかがわからなくなってしまう．
-それにより計算上の腱の長さと差が生じ，圧力を印加していない状態で張力が発生してしまい可動域にも差が生じてしまったと考えられる．
-そのため，ロードセルを用いて張力が発生しないように腱を固定する必要があると考えた．
-本研究では実機のおおよその可動域を計算するために実機の簡易モデルを用いたが，その簡易モデルでは細径MPAを腱に固定する部品の高さを考慮していなかった．
+しかし，この固定方法では腱を設計通りの長さに固定することが難しく，計算上の腱の長さとの差が生じる可能性がある．
+またTPU素材の腱は，柔軟であるが弾性を有するために曲げに対して復元力も生じる．
+表\ref{tab:kadouiki}を見てみると，実際のロボットの可動域が計算上のロボットの可動域と比べて閉じる方向にずれていることが確認できる．
+これらの差により圧力を印加していない状態でも腱はわずかに引き込まれてしまい，計算上の可動域と実機の可動域の間に差が生じたと考えられる．
+また本研究では実機の可動域を計算するために簡易的なモデルを用いたが，その簡易モデルでは細径MPAを腱に固定する部品の高さを考慮していなかった．
 これにより計算上の細径MPAのストロークと差が出てしまい，簡易モデルと実機との間で可動域の差が出てしまったと考えられる．
-この問題を解決するために実機に近い構造を持つモデルを構築し，それを用いてより正確な可動域を計算する必要があると考えた．
+この問題を解決するためには実機に近い構造を持つモデルを構築し，それを用いてより正確な可動域を計算する必要があると考えられる．
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[t]
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.15]{image/kenkotei.jpg}
+    \includegraphics[scale=0.17]{image/kenkotei.jpg}
     \vspace{-2mm}
     \caption{腱の固定方法}
     \label{fig:kenkotei}
@@ -231,7 +232,7 @@ Keywords: McKibben Pneumatic Actuater, Exoskeleton, Biomimetic Robot
   \hspace{0.04\columnwidth}
   \begin{minipage}[b]{0.47\columnwidth}
     \centering
-    \includegraphics[scale=0.15]{image/moshiki_edited.png}
+    \includegraphics[scale=0.17]{image/moshiki_edited.png}
     \vspace{1mm}
     \caption{腱固定方法の模式図}
     \label{fig:ken_moshiki}

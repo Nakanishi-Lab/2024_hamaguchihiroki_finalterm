@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.sjis) (TeX Live 2024) (preloaded format=platex 2024.4.11)  26 JAN 2025 16:44
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.sjis) (TeX Live 2024) (preloaded format=platex 2024.4.11)  27 JAN 2025 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -277,13 +277,13 @@ File: image/kenkotei.jpg Graphic file (type bmp)
 File: image/moshiki_edited.png Graphic file (type bmp)
 <image/moshiki_edited.png>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 252.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 252.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 252.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 252.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 253.
  [2] (./2024_hamaguchi_finalterm.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
@@ -300,4 +300,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  57i,10n,65p,393b,359s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 2024_hamaguchi_finalterm.dvi (2 pages, 18120 bytes).
+Output written on 2024_hamaguchi_finalterm.dvi (2 pages, 18480 bytes).
